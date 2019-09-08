@@ -3,8 +3,8 @@ node
 {
     stage('Checkout')
     {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/samsonawane/SampleProject.git']]])
-        workspace =pwd()
+           checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Nikhilgoswami122/Sample_pipeline.git']]])
+           workspace =pwd()
     }
     stage('Static Code Analysis')
     {
